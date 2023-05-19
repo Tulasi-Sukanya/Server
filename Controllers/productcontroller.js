@@ -31,7 +31,7 @@ const getAllproducts = async(req,res) =>{
     try{
         const result = await productmodel.find({});
         console.log({message:"Reteriving all products from database"},result);
-        return res.status(200).send({success:true,message:"All Products fetched successfully.."},result);
+        return res.status(200).send({success:true,message:"All Products fetched successfully..",data:result});
     }
     catch(error){
         console.log("Error occured while retriving data from database..");
