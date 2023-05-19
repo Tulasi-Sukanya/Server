@@ -53,4 +53,4 @@ router.post("/verify",async(req,res)=>{
     }
 })
 
-// export const PaymentRoutes = router;
+module.exports=router;
